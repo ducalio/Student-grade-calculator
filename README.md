@@ -1,34 +1,40 @@
-# Student Grade Calculator (Java)
+# Java Inheritance Demo
 
 ## 📌 Description
 
-This is a simple Java program that calculates a student's average marks and assigns a grade based on the result.
+This Java program demonstrates object-oriented programming concepts, specifically inheritance and method overriding.
 
-The program asks the user to enter:
+The program creates instances of different classes in an inheritance hierarchy:
 
-* Student name
-* Marks for 3 subjects
+* Person (base class)
+* Student (inherits from Person)
+* GraduateStudent (inherits from Student)
+* Teacher (inherits from Person)
+* School (final class)
 
-Then it calculates the average and displays the grade.
+It showcases single, multilevel, and hierarchical inheritance.
 
 ---
 
 ## ⚙️ Features
 
-* Takes user input using Scanner
-* Calculates average of marks
-* Assigns grade using if-else statements
-* Displays the result clearly
+* Demonstrates single inheritance (Student extends Person)
+* Shows multilevel inheritance (GraduateStudent extends Student)
+* Illustrates hierarchical inheritance (Teacher extends Person)
+* Uses method overriding and super keyword
+* Includes a final class that cannot be inherited
 
 ---
 
 ## 🧠 Concepts Used
 
-* Variables
-* Data types (`double`, `String`, `char`)
-* Input handling (`Scanner`)
-* Conditional statements (`if-else`)
-* Basic arithmetic
+* Classes and Objects
+* Inheritance (extends keyword)
+* Method Overriding
+* super keyword for calling parent methods
+* Access modifiers (protected, private)
+* final classes
+* Constructors in inheritance
 
 ---
 
@@ -37,55 +43,53 @@ Then it calculates the average and displays the grade.
 1. Save the file as:
 
    ```
-   StudentGradeCalculator.java
+   Main.java
    ```
 
 2. Compile the program:
 
    ```
-   javac StudentGradeCalculator.java
+   javac Main.java
    ```
 
 3. Run the program:
 
    ```
-   java StudentGradeCalculator
+   java Main
    ```
 
 ---
 
-## 🧪 Example
-
-Input:
+## 🧪 Example Output
 
 ```
-Enter student name: Caleb
-Enter marks for Subject 1: 80
-Enter marks for Subject 2: 70
-Enter marks for Subject 3: 90
-```
+--- Student ---
+Name: Caleb, Age: 17
+Grade: 12
 
-Output:
+--- Graduate Student ---
+Name: John, Age: 24
+Grade: 16
+Research Topic: Cybersecurity
 
-```
---- Result ---
-Name: Caleb
-Average: 80.0
-Grade: B
+--- Teacher ---
+Name: Mr. Smith, Age: 40
+Subject: Math
+
+Welcome to the School System
 ```
 
 ---
 
-## 📈 Grading System
+## 📚 Inheritance Types Demonstrated
 
-* 90 and above → A
-* 75 – 89 → B
-* 60 – 74 → C
-* 50 – 59 → D
-* Below 50 → F
+* **Single Inheritance**: Student inherits from Person
+* **Multilevel Inheritance**: GraduateStudent inherits from Student (which inherits from Person)
+* **Hierarchical Inheritance**: Both Student and Teacher inherit from Person
+* **Final Class**: School cannot be extended
 
 ---
 
 ## ✍️ Author
 
-Student project for learning basic Java programming.
+Student project for learning Java OOP concepts.
