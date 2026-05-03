@@ -1,4 +1,3 @@
-"# Student-grade-calculator"  
 # Student Grade Calculator (Java)
 
 ## 📌 Description
@@ -60,10 +59,10 @@ Then it calculates the average and displays the grade.
 Input:
 
 ```
-Enter student name: Caleb  
-Enter marks for Subject 1: 80  
-Enter marks for Subject 2: 70  
-Enter marks for Subject 3: 90  
+Enter student name: Caleb
+Enter marks for Subject 1: 80
+Enter marks for Subject 2: 70
+Enter marks for Subject 3: 90
 ```
 
 Output:
